@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <!-- this is for icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-dark navbar-expand-lg"
+      style="background-color: blue"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo.jpg" alt="Bootstrap" width="60" height="54"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Client</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Survice
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">html</a></li>
+                <li><a class="dropdown-item" href="#"> css</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">java script</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      style="height: 50%"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/drink.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>We plan for months ahead — but not years.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/girl.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>We do ad-hoc sprints to improve what we already built.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/old lady.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p>
+              A feature always takes a minimum of 6 – 8 weeks to come to market.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- container -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-6 text-center mt-5 mb-3">
+            This web page is purely designed with the help of bootstrap. To see
+            my further work on bootstrap. Do share your feedback.
+          </h1>
+        </div>
+      </div>
+      <div class="row justify-content-evenly pd-3 pb-3">
+        <div class="col-md-3 text-center mt-5">
+          <h1><i class="bi bi-file-code-fill text-primary"></i></h1>
+          <h4>Well Guided Program</h4>
+          <p>
+            Your Journey will follow a tried & Tested method that delivers the
+            best results. Each concept that you learn will follow the following
+            structure. Very short learning videos: 10-15 minutes 2-3 Guided
+            Problems & 5-10 practice problems to understand:
+          </p>
+        </div>
+        <div class="col-md-3 text-center mt-5">
+          <h1><i class="bi bi-easel-fill text-danger"> </i></h1>
+          <h4>Doubt Resolution</h4>
+          <p>
+            In case you have any doubt at any time while you are watching a
+            video, with an MCQ, a coding assignment or a test - We have you
+            covered! We have a network of dedicated teaching assistants to make
+            sure your doubts get resolved quickly and you dont miss on
+            deadlines.
+          </p>
+        </div>
+        <div class="col-md-3 text-center mt-5">
+          <h1><i class="bi bi-calendar-range-fill text-success"></i></h1>
+          <h4>build for developer</h4>
+          <p>
+            Take your developer skills to the next level with courses on the
+            most popular programming languages. Gain a deep understanding of how
+            to build, deploy, secure and scale everything from web apps to
+            mobile apps using C#, Java, Angular, JavaScript and more.
+          </p>
+        </div>
+      </div>
+      <!-- to draw hr line -->
+      <hr />
+      <!-- growth -->
+
+      <div class="row justify-content-evenly pt-3 pb-3">
+        <div class="col-md-5 justify-content-evenly pt-3">
+          <img src="image/final.webp" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-5 pt-3">
+          <h4 class="">html</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Success example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-success" style="width: 30%"></div>
+          </div>
+          <h4 class="mt-3">css</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Info example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-info" style="width: 50%"></div>
+          </div>
+          <h4 class="mt-3">JavaScript</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Warning example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-warning" style="width: 75%"></div>
+          </div>
+
+          <h4 class="mt-3">python</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Danger example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-danger" style="width: 95%"></div>
+          </div>
+          <h4 class="mt-3">cpp</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Danger example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-primary" style="width: 65%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div
+        class="row justify-content-evenly pb-3 pt-3"
+        style="background-color: rgb(218, 214, 214)"
+      >
+        <div class="col-md-5">
+          <h1 class="mb-4">Contact us</h1>
+          <form>
+            <!-- for name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+
+            <!-- //email start -->
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <!-- email end -->
+
+            <!-- for message -->
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <h3>Address</h3>
+          <p>
+            61C/1F, Om Gayatri Nagar <br />
+            PRAYAGRAJ-211004 <br />
+            <i class="bi bi-telephone-fill text-primary"></i>
+            : 7081-373-120,
+          </p>
+
+          <!-- map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2050.617950106063!2d81.8775303629341!3d25.477850521271506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399ab570c290ea81%3A0x17ed0fe87617690!2s61C%2F1F%2C%20Om%20Gayatri%20Nagar%2C%20Teliarganj%2C%20Prayagraj%2C%20Uttar%20Pradesh%20211004!5e0!3m2!1sen!2sin!4v1685807150269!5m2!1sen!2sin"
+            width="100%"
+            height="270"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- accordian -->
+      <div class="row justify-content-evenly">
+        <h2 class="text-center mt-5 mb-3">FAQ</h2>
+        <div class="col-10 mt-2">
+          <div class="accordion mb-6" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What are 3 types of web development?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>
+                    Here are the three main types of web development:</strong
+                  >
+                  br\ Front-end web development. Front-end web development is
+                  responsible for the look and feel of a website. ... <br />
+                  Back-end web development. ... <br />
+                  Full-stack web development. ... <br />
+                  Web designer. ... <br />
+                  Web programmer. ... <br />
+                  Content developer. ... <br />
+                  Webmaster. ...
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-controls="collapseTwo"
+                >
+                  What is web coding?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Web programming refers to the writing, markup and coding
+                  involved in Web development, which includes Web content, Web
+                  client and server scripting and network security. The most
+                  common languages used for Web programming are XML, HTML,
+                  JavaScript, Perl 5 and PHP
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What are the skills needed to be a web developer?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Top Web Developer Skills You Must Have in 2023 - InterviewBit
+                  Every web developer should know at least the basics of these:
+                  HTML, CSS, and JavaScript for the frontend and PHP or Node. js
+                  for the backend. These core web development abilities will
+                  provide you with the foundation and rationale required for
+                  communicating with programming languages.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <!-- //futter -->
+      <div class="row justify-content-evenly bg-dark text-white pt-2 pb-5">
+        <div class="col-md-3 pt-6 pb-3 text-center">
+          <h3>Top Tutorials</h3>
+
+          HTML Tutorial <br />
+          CSS Tutorial <br />
+          JavaScript Tutorial <br />
+          How To Tutorial <br />
+          SQL Tutorial <br />
+          Python Tutorial <br />
+          W3.CSS Tutorial <br />
+          Bootstrap Tutorial <br />
+          PHP Tutorial <br />
+          Java Tutorial <br />
+          C++ Tutorial <br />
+          jQuery Tutorial
+        </div>
+        <div class="col-md-3 text-center">
+          <h3>Top References</h3>
+          HTML Reference <br />
+          CSS Reference <br />
+          JavaScript Reference <br />
+          SQL Reference <br />
+          Python Reference <br />
+          W3.CSS Reference <br />
+          Bootstrap Reference <br />
+          PHP Reference <br />
+          HTML Colors <br />
+          Java Reference <br />
+          Angular Reference <br />
+          jQuery Reference <br />
+        </div>
+        <div class="col-md-3 text-center">
+          <h3>Get Certified</h3>
+          HTML Certificate <br />
+          CSS Certificate <br />
+          JavaScript Certificate <br />
+          Front End Certificate <br />
+          SQL Certificate <br />
+          Python Certificate <br />
+          PHP Certificate <br />
+          jQuery Certificate <br />
+          Java Certificate <br />
+          C++ Certificate <br />
+          C# Certificate <br />
+          XML Certificate <br />
+        </div>
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <h3>Address</h3>
+          <p>
+            61C/1F, Om Gayatri Nagar <br />
+            PRAYAGRAJ-211004 <br />
+            <i class="bi bi-telephone-fill text-primary"></i>
+            : 7081-373-120,
+          </p>
+        </div>
+      </div>
+      <div class="row bg-primary text-white">
+        <div class="col-12 text-center">
+          Copyright 2001-2023 by <strong> @ Beena.</strong> All Rights Reserved
+        </div>
+      </div>
+
+      <!-- //container end here -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
